@@ -28,7 +28,6 @@ export default {
         },
     },
     head: {
-        title: 'Гросс Маркет',
         htmlAttrs: {
             lang: 'ru',
         },
