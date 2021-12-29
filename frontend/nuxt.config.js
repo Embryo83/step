@@ -43,7 +43,7 @@ export default {
                 as: 'style',
                 rel: 'stylesheet preload prefetch',
                 href: '/fonts/fonts.css',
-              },
+            },
         ],
 
     },
@@ -115,17 +115,4 @@ export default {
         linkExactActiveClass: 'is-active-exact',
         prefetchLinks: false,
     },
-
-    googleFonts: {
-        display: 'swap',
-        families: {
-          Montserrat: true,
-          'Josefin+Sans': true,
-          Lato: [100, 300],
-          Raleway: {
-            wght: [100, 400, 500, 700, 900],
-            ital: [100]
-          },
-        }
-      }
 };
