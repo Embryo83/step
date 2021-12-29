@@ -39,7 +39,13 @@ export default {
         ],
         link: [
             { rel: 'shortcut icon', type: 'image/png', href: '/img/favicon.png' },
+            {
+                as: 'style',
+                rel: 'stylesheet preload prefetch',
+                href: '/fonts/fonts.css',
+              },
         ],
+
     },
 
     loading: {
@@ -67,6 +73,7 @@ export default {
         '@nuxtjs/markdownit',
         '@nuxtjs/style-resources',
         '@nuxtjs/axios',
+        '@nuxtjs/google-fonts',
     ],
 
     axios: {
@@ -108,4 +115,17 @@ export default {
         linkExactActiveClass: 'is-active-exact',
         prefetchLinks: false,
     },
+
+    googleFonts: {
+        display: 'swap',
+        families: {
+          Montserrat: true,
+          'Josefin+Sans': true,
+          Lato: [100, 300],
+          Raleway: {
+            wght: [100, 400, 500, 700, 900],
+            ital: [100]
+          },
+        }
+      }
 };
